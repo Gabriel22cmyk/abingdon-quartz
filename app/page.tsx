@@ -17,7 +17,7 @@ export default function Home() {
   }
 
   return (
-    <main className="bg-cream">
+    <main className="bg-cream relative z-10">
       <Header />
       
       {/* Hero Section */}
