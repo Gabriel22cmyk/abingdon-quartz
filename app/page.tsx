@@ -24,14 +24,14 @@ export default function Home() {
       <section className="marble-bg min-h-screen flex items-center justify-center pt-20 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0" />
         <div className="max-w-4xl mx-auto px-6 text-center z-10">
-          <h1 className="text-6xl md:text-7xl font-bold text-light-brown mb-6">
+          <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-6">
             Exquisite Quartz
             <span className="text-gold block">Worktops</span>
           </h1>
-          <p className="text-xl md:text-2xl text-light-brown/80 mb-4">
+          <p className="text-xl md:text-2xl text-gray-600 mb-4">
             Premium quality finishes. Expert installation.
           </p>
-          <p className="text-lg text-light-brown/70 mb-8">
+          <p className="text-lg text-gray-500 mb-8">
             On-site template visit • Professional fitting • 5-day turnaround
           </p>
           <button 
@@ -50,7 +50,7 @@ export default function Home() {
       <section id="designs" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-light-brown mb-4">
+            <h2 className="text-5xl font-bold text-gray-800 mb-4">
               Our Quartz
               <span className="text-gold block">Collections</span>
             </h2>
@@ -65,10 +65,10 @@ export default function Home() {
       {/* CTA Section */}
       <section className="marble-bg py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-light-brown mb-6">
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">
             Ready for Your New Worktops?
           </h2>
-          <p className="text-lg text-light-brown/80 mb-8">
+          <p className="text-lg text-gray-600 mb-8">
             Get started with a free on-site template visit.
           </p>
           <button 

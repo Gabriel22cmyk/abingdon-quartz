@@ -4,18 +4,18 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer id="contact" className="bg-light-brown text-cream py-12">
+    <footer id="contact" className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-gold rounded-lg flex items-center justify-center">
-                <span className="text-light-brown font-bold text-sm">Q</span>
+                <span className="text-white font-bold text-sm">Q</span>
               </div>
               <span className="font-bold text-lg">Abingdon on Thames Quartz</span>
             </div>
-            <p className="text-cream/80 text-sm">
+            <p className="text-gray-400 text-sm">
               Premium quartz worktops with expert installation and exceptional quality.
             </p>
           </div>
@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-cream/20 pt-8 text-center text-sm text-cream/70">
+        <div className="border-t border-gray-700 pt-8 text-center text-sm text-gray-500">
           <p>&copy; {currentYear} Abingdon on Thames Quartz Worktops. All rights reserved.</p>
           <p className="text-xs mt-2">Premium designs supplied by Fugue Stone.</p>
         </div>
