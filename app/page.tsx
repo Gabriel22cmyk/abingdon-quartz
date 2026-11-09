@@ -1,6 +1,7 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import Image from 'next/image'
 import InquiryModal from '@/components/InquiryModal'
 import ProcessSection from '@/components/ProcessSection'
 import QuartzGrid from '@/components/QuartzGrid'
@@ -20,9 +21,18 @@ export default function Home() {
     <main className="bg-cream relative z-10">
       <Header />
       
-      {/* Hero Section */}
-      <section className="marble-bg min-h-screen flex items-center justify-center pt-20 pb-20 relative overflow-hidden">
-        <div className="absolute inset-0 z-0" />
+      {/* Hero Section - with real installation photo */}
+      <section className="relative min-h-screen flex items-center justify-center pt-20 pb-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/kitchen-white.jpg"
+            alt="Beautiful white quartz worktop installation"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/80" />
+        </div>
         <div className="max-w-4xl mx-auto px-6 text-center z-10">
           <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-6">
             Exquisite Quartz
@@ -40,6 +50,37 @@ export default function Home() {
           >
             View Our Designs
           </button>
+        </div>
+      </section>
+
+      {/* Showcase - Real Installation */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/kitchen-luxury.jpg"
+                alt="Luxury marble quartz worktop with dark island and gold hardware"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                Real Installations,
+                <span className="text-gold block">Real Quality</span>
+              </h2>
+              <p className="text-gray-600 mb-6">
+                Every worktop is precision-cut and expertly fitted by our team. From contemporary islands to classic L-shaped kitchens, we deliver a flawless finish every time.
+              </p>
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="btn-outline-gold"
+              >
+                Get a Free Quote
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -62,9 +103,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="marble-bg py-20">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      {/* CTA Section - with real installation photo */}
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/kitchen-green.jpg"
+            alt="Sage green kitchen with veined quartz worktop"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-white/85" />
+        </div>
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
             Ready for Your New Worktops?
           </h2>
