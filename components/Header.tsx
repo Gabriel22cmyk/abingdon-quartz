@@ -27,8 +27,8 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <a href="tel:07840429841" className="hidden sm:block text-gold font-semibold hover:underline">
-            07840 429841
+          <a href="tel:07877822519" className="hidden sm:block text-gold font-semibold hover:underline">
+            07877 822519
           </a>
           <button className="btn-gold text-sm">
             Inquire

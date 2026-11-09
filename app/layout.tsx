@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import CookieBanner from '@/components/CookieBanner'
 
 export const metadata: Metadata = {
   title: 'Abingdon on Thames Quartz Worktops',
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-cream">{children}</body>
+      <body className="bg-cream">
+        {children}
+        <CookieBanner />
+      </body>
     </html>
   )
 }

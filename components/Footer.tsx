@@ -27,8 +27,8 @@ export default function Footer() {
               <p>
                 <span className="text-gold font-semibold">Phone:</span>
                 <br />
-                <a href="tel:07840429841" className="hover:text-gold transition-colors">
-                  07840 429841
+                <a href="tel:07877822519" className="hover:text-gold transition-colors">
+                  07877 822519
                 </a>
               </p>
               <p>

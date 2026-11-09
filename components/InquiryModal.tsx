@@ -154,7 +154,7 @@ export default function InquiryModal({ quartz, onClose }: InquiryModalProps) {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    placeholder="07840 429841"
+                    placeholder="07877 822519"
                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-gold focus:outline-none transition-colors"
                   />
                 </div>
@@ -177,8 +177,8 @@ export default function InquiryModal({ quartz, onClose }: InquiryModalProps) {
                 {/* Contact Info */}
                 <div className="bg-gray-50 rounded-xl p-4 text-sm text-gray-600">
                   <p className="font-semibold text-light-brown mb-2">Or call us directly:</p>
-                  <a href="tel:07840429841" className="text-gold font-bold text-lg hover:underline">
-                    07840 429841
+                  <a href="tel:07877822519" className="text-gold font-bold text-lg hover:underline">
+                    07877 822519
                   </a>
                 </div>
 
