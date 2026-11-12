@@ -1,6 +1,6 @@
 'use client'
 
-export default function Header() {
+export default function Header({ onInquire }: { onInquire?: () => void }) {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -30,7 +30,7 @@ export default function Header() {
           <a href="tel:07877822519" className="hidden sm:block text-gold font-semibold hover:underline">
             07877 822519
           </a>
-          <button className="btn-gold text-sm">
+          <button onClick={onInquire} className="btn-gold text-sm">
             Inquire
           </button>
         </div>

@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <main className="bg-cream relative z-10">
-      <Header />
+      <Header onInquire={() => setIsModalOpen(true)} />
       
       {/* Hero Section - with real installation photo */}
       <section className="relative min-h-screen flex items-center justify-center pt-20 pb-20 overflow-hidden">
