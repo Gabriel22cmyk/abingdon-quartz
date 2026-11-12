@@ -1,18 +1,21 @@
 'use client'
 
+import Image from 'next/image'
+
 export default function Header({ onInquire }: { onInquire?: () => void }) {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-sm z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-gold rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-lg">Q</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="font-bold text-gray-800 text-sm">Abingdon on Thames</span>
-            <span className="text-xs text-gold font-semibold">Quartz Worktops</span>
-          </div>
-        </div>
+      <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+        <a href="#" className="flex-shrink-0">
+          <Image
+            src="/images/logo.png"
+            alt="Abingdon on Thames Quartz Worktops"
+            width={220}
+            height={60}
+            className="h-12 w-auto"
+            priority
+          />
+        </a>
         
         <nav className="hidden md:flex gap-8">
           <a href="#designs" className="text-gray-700 hover:text-gold transition-colors">
