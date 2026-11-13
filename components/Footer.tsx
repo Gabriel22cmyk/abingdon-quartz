@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -9,11 +11,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gold rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">Q</span>
-              </div>
-              <span className="font-bold text-lg">Abingdon on Thames Quartz</span>
+            <div className="mb-4">
+              <Image
+                src="/images/logo.png"
+                alt="Abingdon on Thames Quartz Worktops"
+                width={200}
+                height={55}
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-gray-400 text-sm">
               Premium quartz worktops with expert installation and exceptional quality.
